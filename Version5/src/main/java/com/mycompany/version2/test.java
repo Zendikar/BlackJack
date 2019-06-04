@@ -29,12 +29,12 @@ public class test {
         dealer.setHand(dealerHand.getHand());
         System.out.println(dealer);
 
-        System.out.println(p.getHand().getTotalValue());
-        System.out.println(dealer.getHand().getTotalValue());
+        System.out.println(p.getHandValue());
+        System.out.println(dealer.getHandValue());
         p.getHand().addCard(deck.drawCard());
         System.out.println(p);
-        System.out.println(p.getHand().getTotalValue());
+        System.out.println(p.getHandValue());
         GameHandler gh = new GameHandler();
-        System.out.println(gh.CalculateHands(p, dealer));
+        System.out.println(gh.calculateHands(p, dealer));
     }
 }

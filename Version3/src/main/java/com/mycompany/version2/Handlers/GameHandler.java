@@ -52,4 +52,12 @@ public class GameHandler {
         p.setHand(deck.drawCards(amount));
         return p.getHand().toString();
     }
+
+    public Player getPlayer(int id) {
+        return playerList.get(id);
+    }
+
+    public String getValue(int playerId) {
+        return String.valueOf(playerList.get(playerId).getHand().getTotalValue());
+    }
 }
